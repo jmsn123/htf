@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 3001;
 const hbs = exphbs.create({ helpers });
 
 const sess = {
-    secret: "Super secret secret",
+    secret: process.env.SECRET,
     cookie: {},
     resave: false,
     saveUninitialized: true,
@@ -42,3 +42,11 @@ sequelize.sync({ force: false }).then(() => {
 });
 
 const newobject = {};
+
+// requirements
+// instance the database
+// backend first and connect front end (mern,vanillajs,vue);
+// creates routes folders for different html files
+// be specific
+// keep it simple 1 task for function
+//
