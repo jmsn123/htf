@@ -1,0 +1,29 @@
+.container{
+    border: solid #1852aa 8px ;   
+    margin-top: 80px;
+   border-radius: 35px;
+    height: 400px; 
+   font-size: 30px;
+ width: 500px;
+ 
+    }
+ #userlogin{
+    padding: 30px;
+ 
+   
+ }   
+    h1{ 
+        text-align: center;
+      color: #1852aa;
+      font-weight: bolder;
+    }
+   
+.form-group{
+    padding: 10px;
+justify-content: center;
+}    
+
+
+
+
+
