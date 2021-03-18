@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const postData = require("../Model/postData");
+const Post = require("../Model/Post");
 // const postData = require("../Model/postData");
-const { postData, User } = require("../models");
+const { post, User } = require("../Model");
 // /get session flag from firebase
 
 router.get("/", async(req, res) => {
@@ -16,7 +16,7 @@ router.get("/", async(req, res) => {
 
         // Serialize data so the template can read it
         const post = projectData.map((posts) => posts.get({ plain: true }));
-
+        console.log("h");
         // Pass serialized data and session flag into template
         res.render("homepage", {
             post,
@@ -45,3 +45,5 @@ router.get("/post/:id", async(req, res) => {
         res.status(500).json(err);
     }
 });
+
+module.exports = router;
