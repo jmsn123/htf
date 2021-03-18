@@ -15,8 +15,8 @@ const PORT = process.env.PORT || 3001;
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers });
 
-const sess = {
-    secret: "Super secret secret",
+const dbsesh = {
+    secret: "secret",
     cookie: {},
     resave: false,
     saveUninitialized: true,
@@ -25,7 +25,7 @@ const sess = {
     }),
 };
 
-app.use(session(sess));
+app.use(session(dbsesh));
 
 // Inform Express.js on which template engine to use
 app.engine("handlebars", hbs.engine);
@@ -41,4 +41,10 @@ sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log("Now listening"));
 });
 
-const newobject = {};
+// requirements
+// instance the database
+// backend first and connect front end (mern,vanillajs,vue);
+// creates routes folders for different html files
+// be specific
+// keep it simple 1 task for function
+//

@@ -111,12 +111,13 @@ font-weight: bold;
 } */
 .container-fluid{
   margin-top: 100px;
-  padding: 10px;
+  /* padding: 10px; */
   height: 500px;
   width: 800px;
+ 
 }
 .card{
-margin: auto;
+/* margin: auto; */
 font-family: 'Crimson Text', serif;
 font-weight: bold;
 }
@@ -125,7 +126,14 @@ h1{
   font-family: 'Playfair Display', serif;
   font-weight: bold;
 }
+aside{
 
+margin-top: 65px;
+margin-left: 30px;
+font-family: 'Crimson Text', serif;
+font-weight: bold;
+
+}
 
 
 

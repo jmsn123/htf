@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS htf_blog;
+CREATE DATABASE htf_blog;
