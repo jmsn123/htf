@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User information </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assest/css/styleUser.css">
+    <link rel="stylesheet" href="./assets/css/styleUser.css">
 
     <link rel="icon" href="assest/images/letter_U_blue-512.png" type="image/gif" sizes="16x16">
 </head>
@@ -23,48 +23,26 @@
 
                 <div id="login">
                     <h1>User Log-In </h1>
-                    <div id="userlogin">
 
-                        <form class="form-inline" action="/action_page.php">
+                    <form id="logins" class="form-inline">
 
-                            <div class="form-group">
-                                <label for="uname">User Name:</label>
-                                <input type="text" class="form-control" id="uname" placeholder="Enter username"
-                                    name="uname" required>
-
-                            </div>
-                            <br>
-                            <!-- <div class="form-group">
-                                <label for="pwd"> E-mail:</label>
-                                <input type="password" class="form-control" id="pwd" placeholder="Enter email"
-                                    name="pswd" required>
-
-                            </div> -->
-                            <br>
-                            <div class="form-group">
-                                <label for="pwd"> Password:</label>
-                                <input type="password" class="form-control" id="pwd" placeholder="Enter password"
-                                    name="pswd" required>
-
-                            </div>
-                            <br>
+                        <div class="form-group">
+                            <label for="uname">User Name:</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                        </div>
+                        <div class="form-group"><label for="pwd"> Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                        </div>
+                        <button type="submit" style="margin: 50px 100px;" class="btn btn-primary">Submit</button>
+                        <a id="link" style="font-size: 20px; margin-left: 10px;" href="#">Forget your password ?</a>
 
 
-                            <button type="submit" style="margin: 50px 100px;" class="btn btn-primary">Submit</button>
-                        </form>
-                    </div>
+                    </form>
 
 
-                    <a id="link" style="font-size: 20px; margin-left: 10px;" href="#">Forget your password ?</a>
 
 
                 </div>
-
-
-
-
-
-
 
             </div>
 
@@ -72,36 +50,31 @@
 
 
 
-            '
-            '
 
 
             <div class="col-md-6">
 
-                <div id="signin" style="float:right;">
+                <div id="signin">
                     <h1>User Sign-In </h1>
-                    <div id="userlogin">
+                    <div id="signUp">
 
-                        <form class="form-inline" action="/action_page.php">
+                        <form class="form-inline">
 
                             <div class="form-group">
-                                <label for="uname">User Name:</label>
-                                <input type="text" class="form-control" id="uname" placeholder="Enter username"
-                                    name="uname" required>
+                                <label for="username">User Name:</label>
+                                <input type="text" class="form-control" id="username" placeholder="Enter username" name="username" required>
 
                             </div>
                             <br>
                             <div class="form-group">
-                                <label for="pwd"> E-mail:</label>
-                                <input type="password" class="form-control" id="pwd" placeholder="Enter email"
-                                    name="pswd" required>
+                                <label for="email"> E-mail:</label>
+                                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
 
                             </div>
                             <br>
                             <div class="form-group">
                                 <label for="pwd"> Password:</label>
-                                <input type="password" class="form-control" id="pwd" placeholder="Enter password"
-                                    name="pswd" required>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
 
                             </div>
 
@@ -158,6 +131,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/assets/js/login.js"></script>
 </body>
 
 </html>
