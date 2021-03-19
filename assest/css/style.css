@@ -117,9 +117,10 @@ font-weight: bold;
  
 }
 .card{
-/* margin: auto; */
+margin: auto;
 font-family: 'Crimson Text', serif;
 font-weight: bold;
+gap: 20px;
 }
 h1{
    font-size: 20px;
