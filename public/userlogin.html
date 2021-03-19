@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User information </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/styleUser.css">
+    <link rel="stylesheet" href="/assets/css/styleUser.css">
 
     <link rel="icon" href="assest/images/letter_U_blue-512.png" type="image/gif" sizes="16x16">
 </head>
@@ -15,9 +15,19 @@
 <body>
 
 
-
     <div class="container">
-        <div class="row">
+        <nav class="navbar-up">
+
+            <a class="first" href="/">Home</a>
+            <a href="/About">About</a>
+            <a href="/Contact">Contact</a>
+            <a class="user" href="login/login">User - Log In </a>
+            <div class="search-container">
+
+            </div>
+
+        </nav>
+        <div class="row wrap">
 
             <div class="col-md-6 ">
 
@@ -28,7 +38,7 @@
 
                         <div class="form-group">
                             <label for="uname">User Name:</label>
-                            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                            <input type="text" class="form-control" id="email" placeholder="Enter username" name="uname" required>
                         </div>
                         <div class="form-group"><label for="pwd"> Password:</label>
                             <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
@@ -38,48 +48,35 @@
 
 
                     </form>
-
-
-
-
                 </div>
-
             </div>
 
-
-
-
-
-
-
             <div class="col-md-6">
-
                 <div id="signin">
-                    <h1>User Sign-In </h1>
-                    <div id="signUp">
+                    <h1>User Sign Up </h1>
 
-                        <form class="form-inline">
+                    <form id="signUp" class="form-inline">
 
-                            <div class="form-group">
-                                <label for="username">User Name:</label>
-                                <input type="text" class="form-control" id="username" placeholder="Enter username" name="username" required>
+                        <div class="form-group">
+                            <label for="username">User Name:</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter username" name="username" required>
 
-                            </div>
-                            <br>
-                            <div class="form-group">
-                                <label for="email"> E-mail:</label>
-                                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                        </div>
 
-                            </div>
-                            <br>
-                            <div class="form-group">
-                                <label for="pwd"> Password:</label>
-                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                        <div class="form-group">
+                            <label for="email"> E-mail:</label>
+                            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
 
-                            </div>
+                        </div>
 
+                        <div class="form-group">
+                            <label for="pwd"> Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password" name="pswd" required>
+
+                        </div>
 
 
+                        <div class="signupButtons">
                             <button type="submit" class="btn btn-primary">Submit</button>
 
 
@@ -108,19 +105,20 @@
                             <button class="btn btn-facebook"> <span
                                     style="display:inline-block; margin-left: 25px; margin-right: 15px;"> Sign in with
                                     Facebook</span> </button>
+                        </div>
 
 
-                        </form>
-                    </div>
-
-
-
-
-
+                    </form>
                 </div>
-            </div>
 
+
+
+
+
+            </div>
         </div>
+
+    </div>
 
     </div>
 
