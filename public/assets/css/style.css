@@ -6,9 +6,11 @@ body {
 .navbar-up {
     overflow: hidden;
     background-color: #333030;
+    border: red 10px solid;
 }
 
 .navbar-up a {
+
     float: left;
     display: block;
     color: rgb(243, 241, 241);
@@ -93,6 +95,11 @@ body {
     background-color: transparent;
     text-decoration: none;
 }
+.dropdown{
+    overflow: visible;
+    z-index: 2;
+}
+
 
 #quote {
     font-weight: bold;
