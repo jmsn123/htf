@@ -1,8 +1,8 @@
 const router = require("express").Router();
-const Post = require("../Model/Post");
+// const Post = require("../Model/Post");
 const path = require("path");
 // const postData = require("../Model/postData");
-const { post, User } = require("../Model");
+const { Post, User } = require("../Model");
 // /get session flag from firebase
 
 router.get("/", async(req, res) => {
