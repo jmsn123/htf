@@ -33,5 +33,11 @@ router.post("/login", async(req, res) => {
         res.status(500).json(err);
     }
 });
-
+router.get("/login", async(req, res) => {
+    try {
+        console.log("Login route hit");
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
 module.exports = router;
