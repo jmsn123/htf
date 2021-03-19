@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User information </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assest/css/styleUser.css">
+    <link rel="stylesheet" href="/assets/css/styleUser.css">
 
     <link rel="icon" href="assest/images/letter_U_blue-512.png" type="image/gif" sizes="16x16">
 </head>
@@ -15,73 +15,69 @@
 <body>
 
 
-
     <div class="container">
-        <div class="row">
+        <nav class="navbar-up">
+
+            <a class="first" href="/">Home</a>
+            <a href="/About">About</a>
+            <a href="/Contact">Contact</a>
+            <a class="user" href="login/login">User - Log In </a>
+            <div class="search-container">
+
+            </div>
+
+        </nav>
+        <div class="row wrap">
 
             <div class="col-md-6 ">
 
                 <div id="login">
                     <h1>User Log-In </h1>
-                    <div id="userlogin">
 
-                        <form class="form-inline" action="/action_page.php">
+                    <form id="logins" class="form-inline">
 
-                            <div class="form-group">
-                                <label for="uname">User Name:</label>
-                                <input type="text" class="form-control" id="uname" placeholder="Enter username"
-                                    name="uname" required>
-
-                            </div>
-                            <br>
-                            <!-- <div class="form-group">
-                                <label for="pwd"> E-mail:</label>
-                                <input type="password" class="form-control" id="pwd" placeholder="Enter email"
-                                    name="pswd" required>
-
-                            </div> -->
-                            <br>
-                            <div class="form-group">
-                                <label for="pwd"> Password:</label>
-                                <input type="password" class="form-control" id="pwd" placeholder="Enter password"
-                                    name="pswd" required>
-
-                            </div>
-                            <br>
+                        <div class="form-group">
+                            <label for="uname">User Name:</label>
+                            <input type="text" class="form-control" id="email" placeholder="Enter username" name="uname" required>
+                        </div>
+                        <div class="form-group"><label for="pwd"> Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                        </div>
+                        <button type="submit" style="margin: 50px 100px;" class="btn btn-primary">Submit</button>
+                        <a id="link" style="font-size: 20px; margin-left: 10px;" href="#">Forget your password ?</a>
 
 
-                            <button type="submit" style="margin: 50px 100px;" class="btn btn-primary">Submit</button>
-                        </form>
-                    </div>
-
-
-                    <a id="link" style="font-size: 20px; margin-left: 10px;" href="#">Forget your password ?</a>
-
-
+                    </form>
                 </div>
-
-
-
-
-
-
-
             </div>
 
+            <div class="col-md-6">
+                <div id="signin">
+                    <h1>User Sign Up </h1>
+
+                    <form id="signUp" class="form-inline">
+
+                        <div class="form-group">
+                            <label for="username">User Name:</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter username" name="username" required>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"> E-mail:</label>
+                            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pwd"> Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password" name="pswd" required>
+
+                        </div>
 
 
-
-
-            '
-            '
-
-    </div>
-
-    <div class="Sign-Up">
-        <h1>User Sign-Up </h1>
-        <div id="userlogin">
-           
-            <form class="form-inline" action="/action_page.php">
+                        <div class="signupButtons">
+                            <button type="submit" class="btn btn-primary">Submit</button>
 
             <div class="form-group">
                 <label for="uname">User Name:</label>
@@ -124,13 +120,17 @@
                             <button class="btn btn-facebook"> <span
                                     style="display:inline-block; margin-left: 25px; margin-right: 15px;"> Sign in with
                                     Facebook</span> </button>
+<<<<<<< HEAD:userlogin.html
 >>>>>>> e5a86e4de34229838a753565b981e7dbecc65a9a
+=======
+                        </div>
+>>>>>>> d6ff9db8262103e11d20848ae010986d182079f5:public/userlogin.html
 
             </div>
             <br>
 
-                        </form>
-                    </div>
+                    </form>
+                </div>
 
             <button  type="submit" class="btn btn-primary">Sign-Up</button>
             </form>
@@ -139,10 +139,10 @@
 
 
 
-                </div>
             </div>
-
         </div>
+
+    </div>
 
     </div>
 
@@ -157,6 +157,7 @@
 >>>>>>> e5a86e4de34229838a753565b981e7dbecc65a9a
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/assets/js/login.js"></script>
 </body>
 
 </html>
