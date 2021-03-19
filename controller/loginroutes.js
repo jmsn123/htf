@@ -3,7 +3,11 @@ const { User } = require("../Model");
 const path = require("path");
 
 router.get("/", async(req, res) => {
+<<<<<<< HEAD
     console.log("GET /login");
+=======
+    console.log("GET /login HOME ");
+>>>>>>> fd6894a971b114b7d7240160063e6557299806b3
     console.log(path.join(__dirname, "../public/userlogin.html"));
 
     try {
@@ -20,7 +24,11 @@ router.get("/", async(req, res) => {
 
 router.get("/login", async(req, res) => {
     try {
+<<<<<<< HEAD
         console.log("letty");
+=======
+        console.log("GET/LOGIN");
+>>>>>>> fd6894a971b114b7d7240160063e6557299806b3
         // const userData = await User.findOne({ where: { email: req.body.email } });
         // if (!userData) {
         //     res

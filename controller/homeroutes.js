@@ -26,21 +26,9 @@ router.get("/", async(req, res) => {
         res.status(500).json(err);
     }
 });
-router.get("/post/:id", async(req, res) => {
+router.post("/login", async(req, res) => {
     try {
-        const postData = await postData.findByPk(req.params.id, {
-            include: [{
-                model: User,
-                attributes: ["name"],
-            }, ],
-        });
-
-        const posts = post.get({ plain: true });
-
-        res.render("project", {
-            ...posts,
-            logged_in: req.session.logged_in,
-        });
+        console.log("Login route hit");
     } catch (err) {
         res.status(500).json(err);
     }
