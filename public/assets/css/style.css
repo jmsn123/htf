@@ -177,7 +177,11 @@ aside {
 
 @media (max-width:900px) {
     .card-container {
+        width: 100%;
         grid-template-columns: 1fr;
+    }
+    .card-body {
+        margin-bottom: 0;
     }
 }
 
