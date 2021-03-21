@@ -111,31 +111,6 @@ body {
 
 } */
 
-<<<<<<< HEAD
-.container-fluid {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    height: 500px;
-    width: 20rem;
-}
-
-.row {
-    width: 150rem;
-    display: flex;
-}
-
-.cards {
-    margin: 2rem;
-}
-
-.card {
-    /* margin: auto; */
-    font-family: 'Crimson Text', serif;
-    font-weight: bold;
-=======
 .card-container {
     width: 75%;
     display: grid;
@@ -185,7 +160,6 @@ body {
 .card-body p {
     font-size: 1.2rem;
     margin: 0 0 40px;
->>>>>>> fd6894a971b114b7d7240160063e6557299806b3
 }
 
 h1 {
@@ -201,15 +175,12 @@ aside {
     font-weight: bold;
 }
 
-<<<<<<< HEAD
-=======
 @media (max-width:900px) {
     .card-container {
         grid-template-columns: 1fr;
     }
 }
 
->>>>>>> fd6894a971b114b7d7240160063e6557299806b3
 
 /* @media (min-width: 576px) { ... }
 
