@@ -10,21 +10,28 @@ Post.init({
         primaryKey: true,
         autoIncrement: true,
     },
-    PostName: {
+    postName: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
     },
     postContent: {
         type: DataTypes.STRING,
     },
     date_created: {
         type: DataTypes.DATE,
-        allowNull: false,
+        allowNull: true,
         defaultValue: DataTypes.NOW,
     },
     postAuthor: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
+    },
+    user_id: {
+        type: DataTypes.INTEGER,
+        references: {
+            model: 'user',
+            key: 'id',
+        },
     },
 }, {
     hooks: {},

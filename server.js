@@ -19,16 +19,14 @@ const dbsesh = {
     cookie: {},
     resave: false,
     saveUninitialized: true,
-    store: new SequelizeStore({
-        db: sequelize,
-    }),
+    // store: new SequelizeStore({
+    //     db: sequelize,
+    // }),
 };
 
 app.use(session(dbsesh));
 
-// Inform Express.js on which template engine to use
-app.engine("handlebars", hbs.engine);
-app.set("view engine", "handlebars");
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -39,11 +37,3 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log("Now listening"));
 });
-
-// requirements
-// instance the database
-// backend first and connect front end (mern,vanillajs,vue);
-// creates routes folders for different html files
-// be specific
-// keep it simple 1 task for function
-//

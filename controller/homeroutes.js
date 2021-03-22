@@ -6,32 +6,31 @@ const { Post, User } = require("../Model");
 // /get session flag from firebase
 
 router.get("/", async(req, res) => {
-    console.log("GET /");
-    try {
-        // // Get all projects and JOIN with user data
-        // const postData = await postData.findAll({
-        //     include: [{
-        //         model: User,
-        //         attributes: ["name"],
-        //     }, ],
-        // });
-        // // Serialize data so the template can read it
-        // const post = projectData.map((posts) => posts.get({ plain: true }));
-        // console.log("h");
-        // // Pass serialized data and session flag into template
-        // res.render("blog");
-        console.log(path.join(__dirname, "../public/home.html"));
-        res.sendFile(path.join(__dirname, "../public/home.html"));
-    } catch (err) {
-        res.status(500).json(err);
-    }
-});
+    // initial get route this is for home page to display different post 
+    const post = await Post.findAll();
+    const postpk = await Post.findByPk(1)
+
+    res.json({
+        post,
+        postpk
+    })
+})
+
 router.post("/login", async(req, res) => {
     try {
-        console.log("Login route hit");
+
+        const user = User.findByPk(req.body.id).then(data => console.log(data))
+        return user
     } catch (err) {
         res.status(500).json(err);
     }
 });
-
+router.get("/login", async(req, res) => {
+    console.log("Home Routes GET/Login");
+    try {
+        res.json("we made it ")
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
 module.exports = router;
