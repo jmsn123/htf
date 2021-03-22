@@ -359,3 +359,32 @@ aside {
 .is-hidden {
     display: none;
 }
+
+footer {
+    background-color: red;
+    height: 10rem;
+}
+
+.footer-container {
+    background-color: orange;
+    height: 100%;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.links li {
+    margin: 20px;
+    color: white;
+}
+
+.links li a {
+    color: white;
+    font-size: 2rem;
+}
