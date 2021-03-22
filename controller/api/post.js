@@ -39,4 +39,23 @@ router.post("/", async(req, res) => {
     })
     res.json(newPost)
 });
+router.post("/:id/update", async(req, res) => {
+
+    try {
+        console.log("we are in the update POST");
+        const { id } = req.params
+        const updatedPost = await Post.update({
+            postName: req.body.name,
+            postContent: req.body.content,
+            postAuthor: req.body.author
+        }, {
+            where: {
+                id
+            }
+        })
+        res.json(updatedPost)
+    } catch (error) {
+        console.log(error);
+    }
+});
 module.exports = router;
