@@ -1,9 +1,9 @@
 const router = require("express").Router();
-const { Post } = require("../api/post");
+const { Post } = require("../../Model");
 const path = require("path");
 
 router.get("/", (req, res) => {
-    console.log("Get/Post");
+    console.log("GET/Post");
     res.send("GET");
 });
 router.post("/", (req, res) => {
