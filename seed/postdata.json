@@ -1,55 +1,16 @@
-[   {
-        "name": "Get Rich Slowly",
-        "description": "Get Rich Slowly contains thousands of articles dedicated to boosting people's financial IQ.",
-        "url": "https://www.getrichslowly.org/"
-    },
-    {
-        "name": "Mr. Money Mustache",
-        "description": "Pete Adeney is the man behind the money mustache, and he's full of great stories and advice.",
-        "url": "https://www.mrmoneymustache.com/" 
-    },
-    {
-        "name": "Money Smart Latina",
-        "description": "Money Smart Latina offers helpful advice for people of many backgrounds, but especially focuses on financial literacy for the underserved Latino community..",
-        "url": "https://moneysmartlatina.com/blog/"  
-    },
-    {
-        "name": "Debt Free Guys",
-        "description": "Married couple David Auten and John Schneider are the Debt Free Guys. Their mission is to help other gay men manage their finances better.",
-        "url": "https://debtfreeguys.com/"
-    },
-    {
-        "name": "Rich & Regular",
-        "description": "Rich and Regular provides an honest look at how to master your finances through simple concepts.",
-        "url": "https://richandregular.com/"   
-    },
-    {
-        "name": "Marriage, Kids, and Money",
-        "description": "Marriage, Kids, and Money is chock full of useful content for young families like paying off debt, retiring early, and reaching financial independence.",
-        "url": "https://marriagekidsandmoney.com/" 
-    },
-    {
-        "name": "Inspired Budget",
-        "description": "If you're looking for a budgeting system that works, Inspired Budget should be your number one stop.",
-        "url": "https://inspiredbudget.com/"
-    },
-    {
-        "name": "The Fioneers",
-        "description": "Launched in 2018 by married couple Jess and Corey, the website documents their road towards financial independence. They coined the term to describe their unique approach to financial independence.",
-        "url": "https://thefioneers.com/"
-    },
-    {
-        "name": "Clever Girl Finance",
-        "description": "Clever Girl Finance may be one of the best sources of free financial resources online. The site features over 30 permanently-free financial courses along with a host of other resources.",
-        "url": "https://www.clevergirlfinance.com/"
-    },
-    {
-        "name": "Brave Saver",
-        "description": "Financial writer Elyssa Kirkham created Brave Saver to help people deal with financial fears and pursue a better life. Readers can learn how to practice daily money management.",
-        "url": "https://bravesaver.com/"
+[{
+        "postName": "Get Rich Slowly",
+        "postContent": "Get Rich Slowly contains thousands of articles dedicated to boosting people's financial IQ.",
+        "postAuthor": "Travis Mckie"
+    }, {
+        "postName": "Get Rich ",
+        "postContent": "We Are Already Rich to boosting people's financial IQ.",
+        "postAuthor": "Antonio Reid"
+    }, {
+        "postName": "Wheres the money ",
+        "postContent": "Get Rich Slowly contains thousands of articles dedicated to boosting people's financial IQ.",
+        "postAuthor": "Travis Mckie"
     }
-    
+
+
 ]
-
-
-///taken from https://www.fool.com/the-ascent/personal-finance/best-personal-finance-blogs////

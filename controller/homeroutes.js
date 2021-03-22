@@ -9,27 +9,23 @@ router.get("/", async(req, res) => {
     console.log("GET /");
     try {
         // // Get all projects and JOIN with user data
-        const postData = await postData.findAll({
+        const postData = await Post.findAll({
             include: [{
                 model: User,
             }, ],
         });
-        return postData
-            // console.log("Heres Data ", postData);
-            // // Serialize data so the template can read it
-            // const post = projectData.map((posts) => posts.get({ plain: true }));
+        console.log("hither");
+        console.log(postData);
 
-        // // Pass serialized data and session flag into template
-        // res.render("blog");
-        // console.log(path.join(__dirname, "../public/home.html"));
-        // res.sendFile(path.join(__dirname, "../public/home.html"));
     } catch (err) {
         res.status(500).json(err);
     }
 });
 router.post("/login", async(req, res) => {
     try {
-        console.log("Login route hit");
+
+        const user = User.findByPk(req.body.id).then(data => console.log(data))
+        return user
     } catch (err) {
         res.status(500).json(err);
     }

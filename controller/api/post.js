@@ -1,10 +1,20 @@
 const router = require("express").Router();
-const { Post } = require("../../Model");
+const { Post, User } = require("../../Model");
 const path = require("path");
 
-router.get("/", (req, res) => {
-    console.log("GET/Post");
-    res.send("GET");
+router.get("/", async(req, res) => {
+    try {
+        const postData = await Post.findAll({
+            include: [{
+                model: User,
+
+            }, ],
+        });
+
+        res.send(postData);
+    } catch (error) {
+        console.log(error);
+    }
 });
 router.post("/", (req, res) => {
     console.log("POST/Post");
