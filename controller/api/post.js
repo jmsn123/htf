@@ -3,9 +3,9 @@ const { Post, User } = require("../../Model");
 const path = require("path");
 
 router.get("/", async(req, res) => {
-    console.log("GET /");
+    console.log("GET /api/post");
     try {
-        // // Get all projects and JOIN with user data
+        // // Get all posts with user data
         const postData = await Post.findAll({
             include: [{
                 model: User,
@@ -16,10 +16,11 @@ router.get("/", async(req, res) => {
         res.status(500).json(err);
     }
 });
+
 router.get("/:id", async(req, res) => {
-    console.log("GET /id");
+    console.log("GET /api/post/<id>");
     try {
-        // // Get all projects and JOIN with user data
+        // Get post with id
         const postData = await Post.findByPk(req.params.id, {
             include: [{
                 model: User,
@@ -30,16 +31,24 @@ router.get("/:id", async(req, res) => {
         res.status(500).json(err);
     }
 });
+
 router.post("/", async(req, res) => {
-    console.log("POST/POST")
-    const newPost = await Post.create({
-        postName: req.body.name,
-        postContent: req.body.content,
-        postAuthor: req.body.author
-    })
-    res.json(newPost)
+    console.log("POST /api/post");
+    try {
+        const newPost = await Post.create({
+            postName: req.body.name,
+            postContent: req.body.content,
+            postAuthor: req.body.author
+        })
+        res.json(newPost)
+
+    } catch (error) {
+        res.json(error).status(404)
+    }
 });
-router.post("/:id/update", async(req, res) => {
+
+router.put("/:id", async(req, res) => {
+    console.log("PUT /api/post/<id>")
 
     try {
         console.log("we are in the update POST");
