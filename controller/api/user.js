@@ -37,9 +37,9 @@ router.post("/login", async(req, res) => {
         console.log("password correct")
         if (!password) res.status(400).json({ message: "incorrect credentials " })
         req.session.save(() => {
-            res.session.loggedIn = true
-            req.session.username = user.name
-            req.session.email = user.email
+            req.session.logged_in = true,
+                req.session.username = user.name,
+                req.session.email = user.email
             res.status(200).json({ user, message: "we logged in " })
         })
 

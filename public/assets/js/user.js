@@ -12,7 +12,11 @@ const login = async(e) => {
                 body: JSON.stringify({ email, password }),
                 headers: { "Content-Type": "application/json" },
             });
-            return data.json()
+            if (data.ok) {
+                document.location.replace('/');
+            } else {
+                alert('Failed to log in');
+            }
         }
 
     } catch (err) {
