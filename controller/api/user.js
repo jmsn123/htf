@@ -26,7 +26,7 @@ router.post("/", async(req, res) => {
 
 })
 router.post("/login", async(req, res) => {
-    console.log("POST /login");
+    console.log("POST /logginin");
 
     try {
         // console.log(User.checkPassword())
