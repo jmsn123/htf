@@ -20,7 +20,7 @@ Post.init({
     date_created: {
         type: DataTypes.DATE,
         allowNull: true,
-        defaultValue: DataTypes.NOW,
+        defaultValue: new Date(),
     },
     postAuthor: {
         type: DataTypes.STRING,
