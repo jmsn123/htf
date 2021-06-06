@@ -35,7 +35,9 @@ Post.init({
         },
     },
 }, {
-    hooks: {},
+    hooks: {
+        
+    },
     sequelize,
     timestamps: false,
     freezeTableName: true,

@@ -1,349 +1,129 @@
-    * {
-        box-sizing: border-box;
-        margin: 0;
-    }
-    
-    nav {
-        margin-bottom: 30rem;
-    }
-    
-    .navbar-up {
-        overflow: hidden;
-        background-color: #333030;
-    }
-    
-    .container {
-        height: 100vh;
-        width: 100vw;
-        padding: 0;
-        margin: 0 auto;
-    }
-    
-    .navbar-up a {
-        float: left;
-        display: block;
-        color: rgb(243, 241, 241);
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 19px;
-        text-decoration-style: none;
-    }
-    
-    .navbar-up a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-    
-    .navbar-up a.first {
-        background-color: #2196F3;
-        color: white;
-    }
-    
-    .navbar-up .search-container {
-        float: right;
-    }
-    
-    .navbar-up input[type=text] {
-        padding: 6px;
-        margin-top: 8px;
-        font-size: 17px;
-        border: none;
-        border-radius: 8px;
-        margin-right: 16px;
-    }
-    
-    .navbar-up .search-container button {
-        float: right;
-        padding: 6px;
-        margin-top: 8px;
-        margin-right: 16px;
-        background: rgb(49, 116, 223);
-        border-radius: 8px;
-        font-size: 20px;
-        border: none;
-        cursor: pointer;
-    }
-    
-    .navbar-up .search-container button:hover {
-        background: rgb(48, 119, 212);
-    }
-    
-    @media screen and (max-width: 600px) {
-        .navbar-up .search-container {
-            float: none;
-        }
-        .navbar-up a,
-        .navbar-up input[type=text],
-        .navbar-up .search-container button {
-            float: none;
-            display: block;
-            text-align: left;
-            width: 100%;
-            margin: 0;
-            padding: 14px;
-        }
-        .navbar-up input[type=text] {
-            border: 1px solid #ccc;
-        }
-    }
-    
-    #search-bar {
-        margin: auto;
-        width: 50%;
-    }
-    
-    .navbar-up a.user {
-        float: right;
-        margin-right: 20px;
-        background-color: #2196F3;
-    }
-    
-    .navbar-up a:active {
-        color: red;
-        background-color: transparent;
-        text-decoration: none;
-    }
-    
-    .wrap {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 75%;
-        margin: 0 auto;
-    }
-    
-    #login {
-        border: solid #1852aa 1px;
-        /* margin-top: 10px; */
-        border-radius: 35px;
-        height: 500px;
-        font-size: 30px;
-        width: 50rem;
-    }
-    
-    #signin {
-        border: solid #1852aa 1px;
-        /* margin-top: 10px; */
-        border-radius: 35px;
-        height: 500px;
-        font-size: 30px;
-        width: 50rem;
-    }
-    
-    #signUp {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 75%;
-        margin: 0 auto;
-    }
-    
-    .signupButtons {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2rem;
-    }
-    
-    .signupButtons button {
-        margin: 10px;
-        margin-top: -10px;
-    }
-    
-    #logins {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding-top: 3rem;
-        margin: 0 auto;
-        width: 80%
-    }
-    
-    .text {
-        padding-top: 20rem;
-    }
-    
-    input {
-        /* width: 100%; */
-        display: block;
-    }
-    
-    #link {
-        /* margin-bottom: 20rem; */
-        display: block;
-    }
-    
-    .column {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    h1 {
-        text-align: center;
-        color: #1852aa;
-        font-weight: bolder;
-    }
-    
-    .form-group {
-        /* padding: 10px; */
-        justify-content: center;
-        /* margin-top: rem; */
-    }
-    /* .google-button {
-  height: 40px;
-  border-width: 0;
-  background: white;
-  color: #737373;
-  border-radius: 5px;
-  white-space: nowrap;
-  box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.05);
-  transition-property: background-color, box-shadow;
-  transition-duration: 150ms;
-  transition-timing-function: ease-in-out;
-  padding: 0;
-  
-  &:focus,
-  &:hover {
-    box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.1);
-  }
-  
-  &:active {
-    background-color: #e5e5e5;
-    box-shadow: none;
-    transition-duration: 10ms;
-  }
-}
-    
-.google-button__icon {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 8px 0 8px 8px;
-  width: 18px;
-  height: 18px;
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.google-button__icon--plus {
-  width: 27px;
-}
-
-.google-button__text {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0 24px;
-  font-size: 14px;
-  font-weight: bold;
-  font-family: 'Roboto',arial,sans-serif;
-}
-
-
-
-html, body {
-  height: 100%;
-}
-
-body {
-  background-color: #f0f0f0;
+.navbar {
+  width: 100%;
+  background: #333;
   display: flex;
+  justify-content: space-evenly;
+}
+.navLinks {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+  margin-left: 30px;
+  height: 100%;
+  width: 100%;
+}
+.navLinks li {
+  list-style-type: none;
+  margin-right: 30px;
+}
+.navLinks li a {
+  color: white;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  margin-right: 30px;
+  z-index: 1000000;
+  /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+  text-decoration: none;
+  color: #ddd;
+}
+
+/* Dropdown content (hidden by default) */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000000;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+
+.dropdown-content a:hover {
+  background-color: orange;
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 90000;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  height: calc(100vh - 90px);
+}
+#Login {
+  display: flex;
+  flex-direction: column;
+  border: chartreuse solid 20px;
+  padding: 3rem;
+  width: 900px;
+}
+.container label,
+input {
+  margin: 10px auto;
+}
+.container input {
+  padding: 2rem;
+  width: 100%;
+}
+#Signup {
+  display: flex;
+  flex-direction: column;
+  border: chartreuse solid 20px;
+  width: 900px;
+  padding: 3rem;
 }
 
-button ~ button {
-  margin-left: 20px;
+.container button {
+  width: min-content;
+  text-align: center;
+  margin: 0 auto;
 }
- */
-    
-    .google-button {
-        height: 40px;
-        border-width: 0;
-        background: white;
-        color: #737373;
-        border-radius: 5px;
-        white-space: nowrap;
-        box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
-        transition-property: background-color, box-shadow;
-        transition-duration: 150ms;
-        transition-timing-function: ease-in-out;
-        padding: 0;
-    }
-    
-    .google-button:focus,
-    .google-button:hover {
-        box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.1);
-    }
-    
-    .google-button:active {
-        background-color: #E5E5E5;
-        box-shadow: none;
-        transition-duration: 10ms;
-    }
-    
-    .google-button__icon {
-        display: inline-flex;
-        vertical-align: middle;
-        margin: 8px 0 8px 8px;
-        width: 18px;
-        height: 18px;
-        box-sizing: border-box;
-    }
-    
-    .google-button__icon--plus {
-        width: 27px;
-    }
-    
-    .google-button__text {
-        display: inline-block;
-        vertical-align: middle;
-        padding: 0 24px;
-        font-size: 14px;
-        font-weight: bold;
-        font-family: "Roboto", arial, sans-serif;
-    }
-    
-    html,
-    body {
-        height: 100%;
-    }
-    
-    body {
-        background-color: #F0F0F0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    button~button {
-        margin-left: 20px;
-    }
-    /* #signin{
-  border: solid #1852aa 8px ;   
- 
- border-radius: 35px;
-  height: 400px; 
- font-size: 30px;
-width: 500px;
-float: right;
-  } */
-    /* .container-md{
-    width: 50%;
-    justify-content: center;
-
-  } */
-    
-    .btn.btn-facebook {
-        background-color: #2479b6;
-        border-color: #2479b6;
-        background-image: url("../images/kiev-ukraine-january-19-2017-260nw-566786650\ \(3\).jpg");
-        background-repeat: no-repeat;
-        color: cornsilk;
-        margin: auto;
-        letter-spacing: .1em;
-    }

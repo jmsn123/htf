@@ -1,29 +1,51 @@
-const login = async(e) => {
-    e.preventDefault();
-    console.log("login route call start ");
-    try {
-        const email = document.getElementById("loginEmail").value;
-        const password = document.getElementById("pwd").value;
-        console.log(email, password);
-        if (email && password) {
-            console.log("inside if block");
-            const data = await fetch("/api/login/login", {
-                method: "POST",
-                body: JSON.stringify({ email, password }),
-                headers: { "Content-Type": "application/json" },
-            });
-            if (data.ok) {
-                document.location.replace('/');
-            } else {
-                alert('Failed to log in');
-            }
-        }
+// const login = async(e) => {
+//     e.preventDefault();
+//     console.log("login route call start ");
+//     try {
+    
+//         console.log(email, password);
+//         if (email && password) {
+//             console.log("inside if block");
+//             const data = await fetch("/api/login/userLogin", {
+//                 method: "POST",
+//                 body: JSON.stringify({ email, password }),
+//                 headers: { "Content-Type": "application/json" },
+//             })
+//             console.log(data)
+//             if (data.ok) {
+//                 document.location.replace('/');
+//             } else {
+//                 alert('Failed to log in');
+//             }
+//         }
 
-    } catch (err) {
-        console.log(err)
+//     } catch (err) {
+//         console.log(err)
+//     }
+
+// };
+
+const loginFormHandler = async (event) => {
+    event.preventDefault();
+  
+    const email = document.getElementById("loginEmail").value;
+    const password = document.getElementById("pwd").value;
+    if (email && password) {
+      const response = await fetch('/api/auth/login', {
+        method: 'POST',
+        body: JSON.stringify({ email, password }),
+        headers: { 'Content-Type': 'application/json' },
+      });
+
+if (response.ok) {
+        // document.location.replace('/');
+        console.log("new update",response)
+      } else {
+          console.log(response)
+        alert('Failed to log in.');
+      }
     }
-
-};
+  };
 const register = async function(e) {
     e.preventDefault();
     console.log("register : POST")
@@ -36,7 +58,7 @@ const register = async function(e) {
         console.log("username: " + username + " password : " + password + " email : " + email)
         if (username && password && email) {
             console.log("Before invokeing fetch")
-            const response = await fetch("/api/login", {
+            const response = await fetch("/api/auth/register", {
                 method: "POST",
                 body: JSON.stringify({ username, email, password }),
                 headers: { "Content-Type": "application/json" },
@@ -50,5 +72,5 @@ const register = async function(e) {
     }
 };
 
-document.getElementById("logins").addEventListener("submit", login);
+document.getElementById("logins").addEventListener("submit", loginFormHandler);
 document.getElementById("signUp").addEventListener("submit", register);
